@@ -1,4 +1,3 @@
-
 name: Deploy Mona Lisa Website
 
 on:
@@ -21,6 +20,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Verify images are real JPEG files (not Git LFS pointers)
+        run: |
+          for f in public/mona-lisa.jpg public/leonardo.jpg; do
+            size=$(stat -c%s "$f")
+            if [ "$size" -lt 10000 ] || head -c 20 "$f" | grep -q "version https"; then
+              echo "::error::$f looks like an LFS pointer or is missing ($size bytes)"; exit 1
+            fi
+            echo "$f OK ($size bytes)"
+          done
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
