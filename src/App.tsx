@@ -145,7 +145,7 @@ export default function App() {
             style={{ transform: `rotateX(${portraitTilt.x}deg) rotateY(${portraitTilt.y}deg)` }}
           >
             <div className="portrait-frame__edge" />
-            <img src="https://raw.githubusercontent.com/ankitkumartiwari-web/mona-lisa/main/public/mona-lisa.jpg" alt="The Mona Lisa by Leonardo da Vinci"/>
+            <img src={`${import.meta.env.BASE_URL}mona-lisa.jpg`} alt="The Mona Lisa by Leonardo da Vinci"/>
             <div className="portrait-frame__glare" />
           </div>
           <div className="portrait-orbit portrait-orbit--front">500+</div>
@@ -159,7 +159,7 @@ export default function App() {
         <div className="chapter__grid reveal">
           <div className="artist-visual">
             <div className="artist-visual__halo" />
-            <img src="https://raw.githubusercontent.com/ankitkumartiwari-web/mona-lisa/main/public/leonardo.jpg" alt="Leonardo da Vinci"/>
+            <img src={`${import.meta.env.BASE_URL}leonardo.jpg`} alt="Leonardo da Vinci"/>
             <div className="artist-visual__date">1452 — 1519</div>
           </div>
           <div className="chapter__copy">
@@ -271,7 +271,7 @@ export default function App() {
 
       <section className="chapter chapter--smile" id="chapter-6">
         <div className="smile-face">
-          <img src="/mona-lisa.jpg" alt="Detail of the Mona Lisa's face and mysterious smile" />
+          <img src={`${import.meta.env.BASE_URL}mona-lisa.jpg`} alt="Detail of the Mona Lisa's face and mysterious smile" />
           <div className="smile-face__veil" />
         </div>
         <div className="smile-content reveal">
@@ -368,7 +368,7 @@ export default function App() {
         <div className="chapter__grid reveal">
           <div className="artist-visual">
             <div className="artist-visual__halo" />
-            <img src="/mona-lisa.jpg" alt="The Mona Lisa, displayed behind protective glass" />
+            <img src={`${import.meta.env.BASE_URL}mona-lisa.jpg`} alt="The Mona Lisa, displayed behind protective glass" />
             <div className="artist-visual__date">A GLOBAL ICON</div>
           </div>
           <div className="chapter__copy">
