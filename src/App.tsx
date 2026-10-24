@@ -145,7 +145,7 @@ export default function App() {
             style={{ transform: `rotateX(${portraitTilt.x}deg) rotateY(${portraitTilt.y}deg)` }}
           >
             <div className="portrait-frame__edge" />
-            <img src={`${import.meta.env.BASE_URL}mona-lisa.jpg`} alt="The Mona Lisa by Leonardo da Vinci"/>
+            <img src="https://raw.githubusercontent.com/ankitkumartiwari-web/mona-lisa/main/public/mona-lisa.jpg" alt="The Mona Lisa by Leonardo da Vinci"/>
             <div className="portrait-frame__glare" />
           </div>
           <div className="portrait-orbit portrait-orbit--front">500+</div>
@@ -159,7 +159,7 @@ export default function App() {
         <div className="chapter__grid reveal">
           <div className="artist-visual">
             <div className="artist-visual__halo" />
-            <img src={`${import.meta.env.BASE_URL}leonardo.jpg`} alt="Leonardo da Vinci"/>
+            <img src="https://raw.githubusercontent.com/ankitkumartiwari-web/mona-lisa/main/public/leonardo.jpg" alt="Leonardo da Vinci"/>
             <div className="artist-visual__date">1452 — 1519</div>
           </div>
           <div className="chapter__copy">
