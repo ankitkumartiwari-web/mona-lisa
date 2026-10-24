@@ -1,0 +1,10 @@
+{
+  "description": "Explore an animated presentation about the Mona Lisa, its history, Leonardo da Vinci, and enduring mysteries—helping students learn and share art history.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
