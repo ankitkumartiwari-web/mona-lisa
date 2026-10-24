@@ -145,7 +145,7 @@ export default function App() {
             style={{ transform: `rotateX(${portraitTilt.x}deg) rotateY(${portraitTilt.y}deg)` }}
           >
             <div className="portrait-frame__edge" />
-            <img src="/mona-lisa.jpg" alt="The Mona Lisa by Leonardo da Vinci" />
+            <img src={`${import.meta.env.BASE_URL}mona-lisa.jpg`} alt="The Mona Lisa by Leonardo da Vinci"/>
             <div className="portrait-frame__glare" />
           </div>
           <div className="portrait-orbit portrait-orbit--front">500+</div>
