@@ -159,7 +159,7 @@ export default function App() {
         <div className="chapter__grid reveal">
           <div className="artist-visual">
             <div className="artist-visual__halo" />
-            <img src="/leonardo.jpg" alt="Portrait traditionally identified as Leonardo da Vinci" />
+            <img src={`${import.meta.env.BASE_URL}leonardo.jpg`} alt="Leonardo da Vinci"/>
             <div className="artist-visual__date">1452 — 1519</div>
           </div>
           <div className="chapter__copy">
